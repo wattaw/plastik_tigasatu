@@ -1,0 +1,2 @@
+INSERT INTO toko_plastik.users (name,email,email_verified_at,password,foto,`level`,two_factor_secret,two_factor_recovery_codes,remember_token,current_team_id,profile_photo_path,created_at,updated_at) VALUES
+	 ('Azmi Fachriza','azmi@mail.com',NULL,'$2y$10$noqyk2R3NxwKiBNn2svDH.BWtUX/ZgyGBcxFoyXQ6yax4NQsUkGaq','/img/logo-20230323071208.png',1,NULL,NULL,NULL,NULL,NULL,'2023-03-23 00:10:40','2023-04-09 21:55:57');
