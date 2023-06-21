@@ -12,4 +12,15 @@ class Produk extends Model
     protected $table = 'produk';
     protected $primaryKey = 'id_produk';
     protected $guarded = [];
+
+//     public function pembelianDetails()
+// {
+//     return $this->hasMany(PembelianDetail::class, 'id_produk');
+// }
+
+//     public function kategori()
+//     {
+//         return $this->hasOne(Kategori::class, 'id_kategori');
+//     }
+
 }

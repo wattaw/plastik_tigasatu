@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembelian;
+use App\Models\PembelianDetail;
 use App\Models\Produk;
 use App\Models\Kategori;
-
+use App\Models\Pembelian;
 use Illuminate\Http\Request;
+
 
 
 class StokController extends Controller
@@ -18,8 +19,10 @@ class StokController extends Controller
      */
     public function index()
     {
-        return view('stok.index');
+        $items = PembelianDetail::with('pembelian', 'produk')->get();
+        return view('stok.index', compact('items'));
     }
+    
 
     /**
      * Show the form for creating a new resource.

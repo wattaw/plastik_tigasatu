@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use App\Models\Produk;
+use App\Models\PembelianDetail;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
